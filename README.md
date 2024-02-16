@@ -77,6 +77,15 @@
 
   Instalación de PYTHON Y modulos necesarios.
 
-  yy
-  
-    
+
+  ![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/2c893265-1d45-45a5-b7dc-7da186918a39)
+
+
+  ![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/e090129f-85ef-4788-9ba8-5eceef5129cb)
+
+
+ CONFIGURACION DE SERVICIOS INSTALADOS
+
+ 
+
+ 

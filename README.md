@@ -1,4 +1,4 @@
-# Práctica 1- Servidor alojamiento web
+# Práctica 2- Servidor alojamiento web
 ## Se pide las instalación, configuración y puesta en marcha de un servidor que ofrezca servicio de alojamiento web configurable:
 
 - ***Se dará alojamiento a páginas web tanto estáticas como dinámicas con “php”.***

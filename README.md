@@ -142,13 +142,66 @@ Genera un certificado autofirmado:
 ![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/af2b447a-a666-4214-a49b-01b9be417c35)
 
 
+Durante este proceso, se te pedirá que proporciones la información de tu certificado, como el nombre de la organización, la ubicación, etc. Puedes completar estos campos según tu preferencia.
+Configuración de vsftpd:
+
+Abre el archivo de configuración de vsftpd:
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/e8cd9d57-b078-4064-acb4-a45206536d52)
+
+
+Dentro del archivo, asegúrate de tener estas líneas descomentadas o añádelas:
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/0754f586-690e-42f8-9899-64e039f76bb2)
+
+
+Reinicia vsftpd para aplicar los cambios:
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/0cb6a8f9-e084-40e3-ac45-3902d8102a37)
+
+Configuración del cortafuegos:
+
+Si estás utilizando UFW (Uncomplicated Firewall), puedes permitir el tráfico FTP con TLS ejecutando:
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/784cba0d-986b-46aa-82cd-1311c06c3f60)
+
+
+Con estos pasos, deberías tener vsftpd configurado para permitir conexiones FTP seguras mediante TLS/SSL, con certificados SSL/TLS generados y el tráfico FTP permitido a través del cortafuegos. Recuerda que los certificados autofirmados proporcionan seguridad básica, pero para un entorno de producción, considera obtener un certificado SSL/TLS de una autoridad de certificación reconocida.
 
 
 
+Para habilitar SSH y SFTP en tu servidor, así como configurar la autenticación de claves SSH para una mayor seguridad, sigue estos pasos:
+
+Instala OpenSSH:
+Si no está instalado, instala el paquete OpenSSH en tu servidor. Dependiendo de tu distribución de Linux, puedes usar los siguientes comandos:
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/54488911-68f4-4efe-a02d-d6ef3369de5a)
 
 
+Verifica el estado de SSH:
+Una vez instalado, verifica que el servicio SSH esté en ejecución utilizando el siguiente comando:
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/de217c1f-f00f-465c-8ddd-85a6e746d1ef)
 
 
+Si SSH no está en ejecución, puedes iniciarlo con el siguiente comando:
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/73a9b7d1-99e8-4d70-8eef-7e4d0c684c13)
+
+Configuración de SSH:
+Puedes ajustar la configuración de SSH según tus necesidades en el archivo de configuración principal /etc/ssh/sshd_config. Por ejemplo, puedes cambiar el puerto predeterminado de SSH (22) o habilitar/deshabilitar ciertas opciones de seguridad.
+
+Habilitar SFTP:
+SFTP está integrado en OpenSSH y generalmente está habilitado por defecto. Los usuarios pueden conectarse a través de SFTP utilizando sus credenciales de SSH.
+
+Configuración de la autenticación de claves SSH:
+La autenticación de claves SSH proporciona una capa adicional de seguridad al requerir que los usuarios proporcionen una clave privada junto con su nombre de usuario al conectarse al servidor SSH. Para configurar la autenticación de claves SSH, sigue estos pasos:
+
+Genera un par de claves SSH (pública y privada) en tu cliente local si aún no tienes uno:
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/0efdbef8-d422-43bf-8953-5f2c32bb51d3)
+
+Copia la clave pública (id_rsa.pub) al servidor remoto. Puedes hacerlo manualmente o utilizando el comando ssh-copy-id:
 
 
 

@@ -138,7 +138,12 @@ Genera un certificado autofirmado:
 
 ![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/48a47a1b-9dc3-4ec0-b054-7d53781afd71)
 
-![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/b48dc063-4be5-427b-9b59-d8def3dc7670)
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/af2b447a-a666-4214-a49b-01b9be417c35)
+
+
+
+
 
 
 

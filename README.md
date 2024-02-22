@@ -86,6 +86,74 @@
 
  CONFIGURACION DE SERVICIOS INSTALADOS
 
- 
+
+-------------- NUEVO ------------------
+
+Instalación de Apache, MySQL, PHP y phpMyAdmin:
+
+Instala Apache, MySQL/MariaDB, PHP y phpMyAdmin en tu servidor. 
+
+instalar Apache, MySQL/MariaDB, PHP y phpMyAdmin en sistemas basados en Debian/Ubuntu (apt) y en sistemas basados en Red Hat/CentOS (yum). Utilizaré el paquete apache2 para Apache, mysql-server para MySQL/MariaDB, php para PHP y phpmyadmin para phpMyAdmin.
+
+Actualizamos el indice de paquetes
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/1cbf158e-5bbb-4c82-887f-4b20b0ead993)
+
+Instalamos Apache
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/bf93c08e-70f4-472d-96ff-9636b50c2db1)
+
+Instala MySQL/MariaDB:
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/223cbeaf-b52d-4733-8a73-db6e4db7ad66)
+
+Instala PHP:
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/17848095-79d1-4bae-bc97-2cc1f4952574)
+
+Instala phpMyAdmin:
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/348a7f24-7fc5-47b5-b4d2-2ea87aece6d4)
+
+Durante la instalación de phpMyAdmin, se te pedirá que elijas el servidor web que estás utilizando (Apache o Nginx), y phpMyAdmin se configurará automáticamente para funcionar con el servidor web seleccionado.
+
+Después de instalar estos paquetes, deberías tener un servidor web Apache en funcionamiento con soporte para PHP y una base de datos MySQL/MariaDB instalada. phpMyAdmin te proporcionará una interfaz web para administrar tus bases de datos MySQL/MariaDB.
+
+Recuerda ajustar la configuración de seguridad según sea necesario, como configurar contraseñas para MySQL/MariaDB y restringir el acceso a phpMyAdmin mediante configuraciones de Apache.
+
+
+Aquí tienes los pasos para configurar vsftpd para conexiones FTP seguras mediante TLS/SSL, generar certificados SSL/TLS y configurar el cortafuegos para permitir el tráfico FTP:
+
+Instalación de vsftpd:
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/373ac666-9507-4a0c-a52f-2ee52569f767)
+
+Generación de certificados SSL/TLS:
+
+Crea un directorio para almacenar los certificados SSL/TLS:
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/5c80c40c-071f-4b2b-bee0-7b34647a19ff)
+
+Genera un certificado autofirmado:
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/48a47a1b-9dc3-4ec0-b054-7d53781afd71)
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/b48dc063-4be5-427b-9b59-d8def3dc7670)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  

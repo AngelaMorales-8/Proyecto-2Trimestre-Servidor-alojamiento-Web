@@ -250,8 +250,83 @@ Ahora, el usuario "ejemplo" tendrá acceso al directorio /var/www/ejemplo y podr
 Accede al directorio de configuración de Apache donde se encuentran los archivos de configuración de los sitios virtuales. Por lo general, este directorio es /etc/apache2/sites-available/.
 Crea un nuevo archivo de configuración para tu host virtual. Puedes usar cualquier editor de texto, por ejemplo:
 
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/142df974-37fc-4b3e-bc13-e73e124d2959)
+
+2. Configurar el host virtual:
+Dentro de este archivo, configura el host virtual utilizando la directiva VirtualHost. Especifica el nombre de dominio y el directorio raíz del sitio web. Aquí tienes un ejemplo básico de configuración:
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/522c3533-1407-4610-a84d-6e09d26764ec)
+
+
+3. Habilitar el host virtual:
+Utiliza el comando a2ensite para habilitar el host virtual que acabas de crear:
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/ad652409-ef88-4ca7-bc75-dd3e52844f0b)
+
+4. Reiniciar Apache:
+Para que los cambios surtan efecto, reinicia el servicio de Apache:
+
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/689bea84-8338-4ae8-bb0d-57fd9acabf20)
+
+Con estos pasos, has configurado correctamente un host virtual en Apache para tu sitio web. Ahora puedes acceder a tu sitio web a través del nombre de dominio especificado en la configuración del host virtual.
+
+
+-------------3333333333-----------------
+
+1. Crear un nuevo usuario:
+Puedes utilizar el comando adduser o useradd para crear un nuevo usuario en el sistema. La diferencia principal entre ellos radica en la forma en que manejan algunos aspectos específicos de la configuración del usuario. A continuación, se muestra cómo usar adduser:
+
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/dc998761-54c7-4bed-b39c-1a2120a9226f)
+
+Contraseña: angelausuario
+
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/76ac0a71-6fff-43e6-855e-8424d16631a8)
+
+
+2. Configurar permisos para acceso a servicios:
+Una vez que el usuario ha sido creado, puedes configurar los permisos para determinar su acceso a servicios como SSH, FTP, etc.
+
+INSTALACION servicio SSH
+
+El servicio SSH no está instalado: Es posible que el servidor SSH no esté instalado en tu sistema. En sistemas basados en Debian/Ubuntu, el paquete se llama openssh-server, mientras que en sistemas basados en Red Hat/CentOS, puede ser openssh-server. Puedes instalarlo usando el gestor de paquetes correspondiente a tu distribución. Por ejemplo:
+
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/bb22eefb-f0fd-4da1-8416-d7a9b8be4993)
+
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/2fa7073f-d4c6-4ff3-8fe1-6cfd9d1670b6)
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/89132837-d30d-4847-a499-b5f1509de125)
+
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/36a86801-c9eb-4529-8b43-7deb0a384bf7)
 
 
 
 
- 
+
+
+SSH:
+Para permitir o denegar el acceso SSH al nuevo usuario, puedes editar el archivo de configuración /etc/ssh/sshd_config y ajustar las directivas según sea necesario. Por ejemplo, para permitir el acceso solo a ciertos usuarios, puedes agregar o modificar la línea:
+
+Abre el archivo de configuración de SSH:
+
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/b1947819-3acd-429a-bacd-a92d257c6373)
+
+
+Dentro del archivo, busca la línea que comienza con AllowUsers. Si no existe, puedes agregarla al final del archivo.
+
+Agrega el nombre de usuario al que deseas permitir el acceso SSH:
+
+ ![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/28c5c54a-70a3-4ea0-97a6-7093dd23777a)
+
+
+Guarda los cambios y cierra el editor.
+
+Reinicia el servicio SSH para que los cambios surtan efecto:
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/69b95a10-865e-44c1-88d8-4a8828a9b299)
+

@@ -203,12 +203,52 @@ Genera un par de claves SSH (pública y privada) en tu cliente local si aún no 
 
 Copia la clave pública (id_rsa.pub) al servidor remoto. Puedes hacerlo manualmente o utilizando el comando ssh-copy-id:
 
+------------------------------------------------------
+1. Creación de usuarios y directorios para el alojamiento web:
+Crea un usuario para cada sitio web que desees alojar en el servidor. Por ejemplo, puedes utilizar el comando sudo adduser nombre_usuario.
+Crea un directorio para cada sitio web en el directorio de documentos del servidor web. Por ejemplo, mkdir /var/www/nombre_sitio.
+Asigna los permisos adecuados al directorio para que el usuario del sitio web tenga acceso. Puedes hacerlo con chown y chmod.
+2. Configuración de host virtual en Apache:
+Crea un archivo de configuración para el host virtual dentro del directorio de configuración de Apache, como /etc/apache2/sites-available/.
+Configura el host virtual con la directiva VirtualHost, especificando el nombre de dominio y el directorio raíz del sitio web.
+Habilita el host virtual utilizando el comando a2ensite.
+3. Creación de usuario del sistema para acceso a FTP, SSH, SMTP, etc.:
+Utiliza el comando adduser para crear un nuevo usuario en el sistema.
+Configura los permisos adecuados para el usuario, como permitir o denegar el acceso SSH, FTP, etc.
+4. Configuración de subdominio en el servidor DNS:
+Agrega un nuevo registro DNS en el panel de control de tu proveedor de dominios para el subdominio.
+Configura la resolución directa e inversa en el servidor DNS para el nuevo subdominio.
+5. Creación de base de datos y usuario con privilegios:
+Utiliza el sistema de gestión de bases de datos que estés utilizando (como MySQL o PostgreSQL) para crear una nueva base de datos y un usuario asociado con todos los privilegios (ALL PRIVILEGES) sobre esa base de datos.
+6. Habilitación de ejecución de aplicaciones Python con el servidor web:
+Instala el módulo mod_wsgi en Apache para ejecutar aplicaciones Python.
+Configura un nuevo host virtual en Apache con soporte para aplicaciones Python y especifica la ruta de acceso a la aplicación WSGI.
+Una vez que hayas completado estos pasos adicionales, habrás extendido la configuración de tu servidor de alojamiento web para satisfacer las necesidades adicionales mencionadas. Recuerda siempre realizar pruebas exhaustivas después de cada configuración para garantizar su correcto funcionamiento
+
+1. Crear un usuario para cada sitio web:
+Utiliza el comando adduser para crear un nuevo usuario en el sistema. Por ejemplo, si tu sitio web se llama "ejemplo", puedes ejecutar:
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/0c43e533-f6dd-44cb-a887-375c2755768f)
 
 
+2. Crear un directorio para cada sitio web:
+Crea un directorio dentro del directorio de documentos del servidor web, como /var/www/, para cada sitio web. Por ejemplo:
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/c6e8d8ad-d49a-42ba-af3d-83776da5451c)
+
+3. Asignar los permisos adecuados al directorio:
+Para que el usuario del sitio web tenga acceso al directorio, puedes cambiar el propietario y el grupo del directorio al usuario que acabas de crear. También puedes establecer los permisos apropiados. Por ejemplo:
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/d174541b-5762-4b73-b210-7b12c906eab9)
 
 
+En este caso, -R indica que los cambios se aplicarán recursivamente a todos los archivos y subdirectorios dentro de /var/www/ejemplo. Los permisos 755 otorgan permisos de lectura, escritura y ejecución al propietario, y permisos de lectura y ejecución al grupo y a otros usuarios.
 
-
+Ahora, el usuario "ejemplo" tendrá acceso al directorio /var/www/ejemplo y podrá colocar los archivos del sitio web en ese directorio. Asegúrate de repetir estos pasos para cada sitio web que desees alojar en el servidor.
+---------------------2222222222222----------
+1. Crear un archivo de configuración para el host virtual:
+Accede al directorio de configuración de Apache donde se encuentran los archivos de configuración de los sitios virtuales. Por lo general, este directorio es /etc/apache2/sites-available/.
+Crea un nuevo archivo de configuración para tu host virtual. Puedes usar cualquier editor de texto, por ejemplo:
 
 
 

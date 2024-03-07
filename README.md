@@ -114,10 +114,112 @@ Configuramos los protocolos pop3 e imap en dovecot.
 
 ![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/de53d574-c0ee-4445-9fad-6d6b2deef79b)
 
+Comprobamos que dovecot tiene activado ssl.
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/6bd2d6b5-996d-4a47-8dd5-6a538f303857)
 
 
+DESCRIPCIÓN COMPLETA DEL SCRIPT
+
+    #!/bin/bash
+
+    usuario=$1
+    contra=$2
+    ip=$3
+    dominio="${usuario}.marisma.local"
+
+    if [ $# -ne 3 ]; then
+       echo "Error: Debes proporcionar exactamente 3 argumentos - nombre, contraseña e IP."
+       exit 1
+    fi
 
 
+   # Variables para las rutas de zonas
+   zona_directa="/etc/bind/zones/db.marisma.local"
+   zona_inversa="/etc/bind/zones/db.192.168.195"
+
+  # Creación del directorio de trabajo
+  sudo useradd -m -d /home/$usuario -s /bin/bash $usuario
+
+  # Configuración de la contraseña del usuario
+  echo "$usuario:$contra" | sudo chpasswd
+
+  # Configuración subdominio DNS
+  #Zona directa
+  echo "\$ORIGIN ${dominio}." >> $zona_directa
+  echo "@ IN A ${ip}" >> $zona_directa
+  echo "www IN A ${ip}" >> $zona_directa
+  #Zona inversa
+  echo "${ip} IN PTR ns.${dominio}." >> $zona_inversa
+
+  service apache2 reload > /dev/null
+  service bind9 reload > /dev/null
+  service proftpd reload > /dev/null
+
+  # Configuración del host virtual en Apache
+  ruta_a="/etc/apache2/sites-available/${dominio}.conf"
+  ruta_e="/etc/apache2/sites-enabled/${dominio}"
+  document_root="/var/www/html/$usuario"
+  dir_python="${document_root}/python-web"
+  app_python="${dir_python}/mypythonapp"
+  public_python="${dir_python}/public_html"
+  controller_py="${app_python}/controller.py"
+
+  #Añadir el dominio al fichero hosts
+
+  echo "${ip} ${dominio}" >> /etc/hosts
+  echo "127.0.0.1 ${dominio}" >> /etc/hosts
+
+  mkdir $document_root
+  mkdir $dir_python
+  mkdir $app_python
+  mkdir $public_python
+
+  #Crear fichero python
+
+  touch $controller_py
+  echo "# -*- coding: utf-8 -*-
+  def application(environ,start_response):
+  status= '200 OK'
+  html = 'Página del usuario ${usuario} python'
+  html = bytes(html,encoding='utf-8')
+  response_header = [('Content-type','text/html')]
+  start_response(status,response_header)
+  yield html" > ${controller_py}
+
+  # Crear el archivo de configuración del host virtual
+  echo "<VirtualHost *:80>
+  ServerAdmin admin@$dominio
+  ServerName $dominio
+  WSGIScriptAlias / $controller_py
+  DocumentRoot $public_python
+  <Directory />
+  Options FollowSymLinks
+  AllowOverride all
+  </Directory>
+  ErrorLog /var/log/apache2/$dominio.errorLog.log
+  CustomLog /var/log/apache2/$dominio.customLog.log combined
+  </VirtualHost>" | sudo tee $ruta_a > /dev/null
+
+  # Verificar la configuración de Apache
+  apache2ctl configtest
+
+  # Habilitar el sitio y reiniciar Apache si la verificación es exitosa
+  if [ $? -eq 0 ]; then
+      a2ensite $dominio > /dev/null
+      systemctl restart apache2
+  else
+      echo "Error en la configuración de Apache. No se ha habilitado el sitio."
+  fi
+
+  # Configuración base de datos
+  mysql -u root -e "CREATE DATABASE $usuario;"
+  mysql -u root -e "CREATE USER '$usuario'@'localhost' IDENTIFIED BY  '$contra';"
+  mysql -u root -e "GRANT ALL PRIVILEGES ON $usuario.* TO '$usuario'@'localhost';"
+  mysql -u root -e "FLUSH PRIVILEGES;"
+  
+  echo "El usuario ${usuario} ha sido creado con exito"
+  
 ------------------------------------------------------------------------------------------------
 
 - ***Se dará alojamiento a páginas web tanto estáticas como dinámicas con “php”.***

@@ -8,21 +8,61 @@ Este proyecto se centra en brindar un servicio completo de alojamiento web. Este
   ![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/9a308fd3-435b-4c05-9060-f523f5a5c8d8)
 
 
-INSTALACION DE SERVICIOS NECESARIOS
+                                INSTALACION DE SERVICIOS NECESARIOS
 
 Instalación de Apache con el comando: sudo apt-get install apache2
 
 ![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/2d506c40-6798-4f6f-9b15-9d3f30230470)
 
 
+Instalación de php con el comando: sudo 
+
+  ![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/9f9c7d5e-4482-4290-a848-a13785c6a7c5)
+  
+
+Instalación Php: librerías de php para apache: sudo apt-get install php libapache2-mod-php
+
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/9bcf3ee3-8c5c-44cd-9f0a-3c35c1609029)
+
+
+ 
+  Instalación de PHPMYADMIN
+
+  ![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/d59c273a-f22e-4d2f-b4f3-dbbb15ff7c47)
 
 
 
+  Instalación de MYSQL
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/3ec43cf1-fbec-484c-a427-e434922e1a07)
 
 
 
+Instalación Dns (bind9):
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/a4c67ab4-f14f-48b6-878e-4e0e98d4c7e5)
+
+Instalación Python: módulo de python3 para apache.
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/e18b5224-3a27-4d90-9a75-76804c7225dc)
 
 
+Instalación ProFtpd:
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/4915bc0f-dfbc-4d9e-bad5-86c7aac8c5de)
+
+
+Instalación OpenSsl:
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/dd8278c6-264c-42b0-8641-e1ea74ffbd73)
+
+
+Instalación Filezilla:
+
+
+Instalación Postfix:
+Instalación Dovecot:
 
 
 
@@ -68,56 +108,6 @@ Instalación de Apache con el comando: sudo apt-get install apache2
 - ***Se creará una base de datos además de un usuario con todos los permisos sobre dicha base de datos (ALL PRIVILEGES).***
 
 - ***Se habilitará la ejecución de aplicaciones Python con el servidor web.***
-
-
-
-INSTALACION DE SERVICIOS NECESARIOS
-
-  Instalación de APACHE
-
-
-
-  
-  Instalación de PHP
-
-  ![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/9f9c7d5e-4482-4290-a848-a13785c6a7c5)
-
-
-  Instalación de MYSQL
-
-![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/3ec43cf1-fbec-484c-a427-e434922e1a07)
-
-  
-  Instalación de PHPMYADMIN
-
-  ![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/d59c273a-f22e-4d2f-b4f3-dbbb15ff7c47)
-
-  Instalación de VSFTPD
-
-  ![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/4686d8fd-0ac4-4022-b00f-771b90d4798c)
-  
-
-  Instalación de OPENSSH
-
-  ![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/1e7805cc-c0ec-4ab0-8d7c-8b4c29c39f11)
-
-  
-
-  Instalación de POSTFIX Y DOVECOT
-
-  ![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/e7194ca4-1b07-4c8c-9784-327e7e6eb34e)
-  
-
-  Instalación de PYTHON Y modulos necesarios.
-
-
-  ![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/2c893265-1d45-45a5-b7dc-7da186918a39)
-
-
-  ![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/e090129f-85ef-4788-9ba8-5eceef5129cb)
-
-
- CONFIGURACION DE SERVICIOS INSTALADOS
 
 
 -------------- NUEVO ------------------

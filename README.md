@@ -60,11 +60,17 @@ Instalación OpenSsl:
 
 Instalación Filezilla:
 
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/92b545f6-c4fe-47c4-a506-350485add406)
+
 
 Instalación Postfix:
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/a3f65419-ec79-4182-8b15-0bfd90bf60c0)
+
+
 Instalación Dovecot:
 
-
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/3229e522-8621-4a8e-b86d-42066ace1382)
 
 
 

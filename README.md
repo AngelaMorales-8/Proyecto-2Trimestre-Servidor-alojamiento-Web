@@ -10,6 +10,10 @@ Este proyecto se centra en brindar un servicio completo de alojamiento web. Este
 
                                 INSTALACION DE SERVICIOS NECESARIOS
 
+  Actualizamos el indice de paquetes
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/1cbf158e-5bbb-4c82-887f-4b20b0ead993)
+
 Instalación de Apache con el comando: sudo apt-get install apache2
 
 ![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/2d506c40-6798-4f6f-9b15-9d3f30230470)
@@ -72,16 +76,46 @@ Instalación Dovecot:
 
 ![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/3229e522-8621-4a8e-b86d-42066ace1382)
 
+Instalación de vsftpd:
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/373ac666-9507-4a0c-a52f-2ee52569f767)
 
 
+Después de instalar estos paquetes, tenemos un servidor web Apache en funcionamiento con soporte para PHP y una base de datos MySQL instalada. phpMyAdmin te proporcionará una interfaz web para administrar tus bases de datos MySQL.
 
 
+CONFIGURAMOS LOS SERVICIOS INSTALADOS
+
+Generamos un certificado SSL
+
+ Creamos un directorio para almacenar los certificados SSL:
+ 
+ ![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/dcda8f25-c235-4397-a2c4-9d782f29159c)
+
+Genera un certificado autofirmado:
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/8d3bebb9-46bc-4dc4-bc17-80b296a52a9b)
+
+Configuramos filezilla para entrar, usamos certificado ssl:
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/f0d5839e-1977-44de-afbb-34e8dca2a618)
+
+Configuramos Postfix
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/818c270c-8c39-4a0c-bb72-92412560d01c)
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/abb64398-32ae-4c1c-bd99-20010b16b715)
 
 
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/9a1bcb38-1fb1-4df4-8ff6-f937a2fbca4e)
 
 
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/b4ad3f21-ad76-4a03-aa49-13e62b7a8320)
 
 
+Configuramos los protocolos pop3 e imap en dovecot.
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/de53d574-c0ee-4445-9fad-6d6b2deef79b)
 
 
 

@@ -1,5 +1,47 @@
 # Práctica 2- Servidor alojamiento web
-## Se pide las instalación, configuración y puesta en marcha de un servidor que ofrezca servicio de alojamiento web configurable:
+## Se pide las instalación, configuración y puesta en marcha de un servidor que ofrezca servicio de alojamiento web configurable.
+
+Este proyecto se centra en brindar un servicio completo de alojamiento web. Este servicio incluirá soporte tanto para páginas estáticas como dinámicas desarrolladas en PHP. Cada cliente recibirá un directorio de usuario personalizado que contendrá una página web predeterminada. Además, se facilitará a los usuarios la gestión de bases de datos SQL a través de la interfaz de phpMyAdmin. Para la administración de archivos, se implementará un acceso seguro mediante FTP con TLS y SSH/SFTP. 
+
+- Instalacion del sistema operativo, en nuestro caso usaremos Ubuntu Server-22.04.3
+- 
+  ![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/9a308fd3-435b-4c05-9060-f523f5a5c8d8)
+
+
+INSTALACION DE SERVICIOS NECESARIOS
+
+Instalación de Apache con el comando: sudo apt-get install apache2
+
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/2d506c40-6798-4f6f-9b15-9d3f30230470)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------
 
 - ***Se dará alojamiento a páginas web tanto estáticas como dinámicas con “php”.***
 
@@ -27,22 +69,13 @@
 
 - ***Se habilitará la ejecución de aplicaciones Python con el servidor web.***
 
-- Instalacion de Ubuntu Server-22.04.3
-  ![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/9a308fd3-435b-4c05-9060-f523f5a5c8d8)
-  
-
-- Actualizamos el sistema:
-![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/ac25efa7-9e9c-4d47-b8bf-5a191d5805c2)
-
-![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/e53b0a03-1555-40f3-89d8-7180bde1e4c4)
 
 
-
-- Instalamos el software necesario
+INSTALACION DE SERVICIOS NECESARIOS
 
   Instalación de APACHE
 
-![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/2d506c40-6798-4f6f-9b15-9d3f30230470)
+
 
   
   Instalación de PHP

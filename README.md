@@ -106,12 +106,9 @@ Configuramos Postfix
 
 ![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/abb64398-32ae-4c1c-bd99-20010b16b715)
 
-
-![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/9a1bcb38-1fb1-4df4-8ff6-f937a2fbca4e)
-
-
 ![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/b4ad3f21-ad76-4a03-aa49-13e62b7a8320)
 
+![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/9a1bcb38-1fb1-4df4-8ff6-f937a2fbca4e)
 
 Configuramos los protocolos pop3 e imap en dovecot.
 

@@ -18,32 +18,32 @@ Instalación de Apache con el comando: sudo apt-get install apache2
 
 ![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/2d506c40-6798-4f6f-9b15-9d3f30230470)
 
+Instalación Php: librerías de php para apache: sudo apt-get install php libapache2-mod-php
 
-Instalación de php con el comando: sudo 
 
   ![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/9f9c7d5e-4482-4290-a848-a13785c6a7c5)
   
 
-Instalación Php: librerías de php para apache: sudo apt-get install php libapache2-mod-php
+Comprobación de la versión de php
 
 
 ![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/9bcf3ee3-8c5c-44cd-9f0a-3c35c1609029)
 
 
  
-  Instalación de PHPMYADMIN
+  Instalación de PHPMYADMIN con el comando: sudo apt install phpmyadmin
 
   ![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/d59c273a-f22e-4d2f-b4f3-dbbb15ff7c47)
 
 
 
-  Instalación de MYSQL
+  Instalación de MYSQL con el comando: sudo apt install mysql-server
 
 ![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/3ec43cf1-fbec-484c-a427-e434922e1a07)
 
 
 
-Instalación Dns (bind9):
+Instalación Dns (bind9) con el comando:sudo apt install bind9
 
 ![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/a4c67ab4-f14f-48b6-878e-4e0e98d4c7e5)
 
@@ -52,12 +52,12 @@ Instalación Python: módulo de python3 para apache.
 ![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/e18b5224-3a27-4d90-9a75-76804c7225dc)
 
 
-Instalación ProFtpd:
+Instalación ProFtpd usando el comando:sudo apt install proftpd -y
 
 ![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/4915bc0f-dfbc-4d9e-bad5-86c7aac8c5de)
 
 
-Instalación OpenSsl:
+Instalación OpenSsl con el comando: sudo apt install openssl -y
 
 ![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/dd8278c6-264c-42b0-8641-e1ea74ffbd73)
 

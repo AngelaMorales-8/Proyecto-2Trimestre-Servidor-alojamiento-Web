@@ -4,13 +4,13 @@
 Este proyecto se centra en brindar un servicio completo de alojamiento web. Este servicio incluirá soporte tanto para páginas estáticas como dinámicas desarrolladas en PHP. Cada cliente recibirá un directorio de usuario personalizado que contendrá una página web predeterminada. Además, se facilitará a los usuarios la gestión de bases de datos SQL a través de la interfaz de phpMyAdmin. Para la administración de archivos, se implementará un acceso seguro mediante FTP con TLS y SSH/SFTP. 
 
 - Instalacion del sistema operativo, en nuestro caso usaremos Ubuntu Server-22.04.3
-- 
+
   ![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/9a308fd3-435b-4c05-9060-f523f5a5c8d8)
 
 
-                                INSTALACION DE SERVICIOS NECESARIOS
+                                **INSTALACION DE SERVICIOS NECESARIOS**
 
-  Actualizamos el indice de paquetes
+  - Actualizamos el indice de paquetes
 
 ![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/1cbf158e-5bbb-4c82-887f-4b20b0ead993)
 
@@ -84,7 +84,7 @@ Instalación de vsftpd:
 Después de instalar estos paquetes, tenemos un servidor web Apache en funcionamiento con soporte para PHP y una base de datos MySQL instalada. phpMyAdmin te proporcionará una interfaz web para administrar tus bases de datos MySQL.
 
 
-CONFIGURAMOS LOS SERVICIOS INSTALADOS
+                      **CONFIGURAMOS LOS SERVICIOS INSTALADOS**
 
 Generamos un certificado SSL
 
@@ -119,7 +119,7 @@ Comprobamos que dovecot tiene activado ssl.
 ![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/6bd2d6b5-996d-4a47-8dd5-6a538f303857)
 
 
-DESCRIPCIÓN COMPLETA DEL SCRIPT
+**DESCRIPCIÓN COMPLETA DEL SCRIPT**
 
                 #!/bin/bash
 

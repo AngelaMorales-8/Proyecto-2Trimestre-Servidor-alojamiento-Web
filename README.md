@@ -225,6 +225,7 @@ DESCRIPCIÓN COMPLETA DEL SCRIPT
 
   
 ------------------------------------------------------------------------------------------------
+EN EL PROCESO ANTERIOR HABIA QUE CUMPLIR LO SIGUIENTE...
 
 - ***Se dará alojamiento a páginas web tanto estáticas como dinámicas con “php”.***
 
@@ -253,4 +254,4 @@ DESCRIPCIÓN COMPLETA DEL SCRIPT
 - ***Se habilitará la ejecución de aplicaciones Python con el servidor web.***
 
 
--------------- NUEVO ------------------
+-----------------------------------------------------------------------------------

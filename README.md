@@ -8,7 +8,7 @@ Este proyecto se centra en brindar un servicio completo de alojamiento web. Este
   ![image](https://github.com/AngelaMorales-8/Proyecto-2Trimestre-Servidor-alojamiento-Web/assets/122454505/9a308fd3-435b-4c05-9060-f523f5a5c8d8)
 
 
-                                **INSTALACION DE SERVICIOS NECESARIOS**
+                                INSTALACION DE SERVICIOS NECESARIOS
 
   - Actualizamos el indice de paquetes
 
@@ -84,7 +84,7 @@ Instalación de vsftpd:
 Después de instalar estos paquetes, tenemos un servidor web Apache en funcionamiento con soporte para PHP y una base de datos MySQL instalada. phpMyAdmin te proporcionará una interfaz web para administrar tus bases de datos MySQL.
 
 
-                      **CONFIGURAMOS LOS SERVICIOS INSTALADOS**
+                      CONFIGURAMOS LOS SERVICIOS INSTALADOS
 
 Generamos un certificado SSL
 
